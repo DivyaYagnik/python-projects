@@ -21,12 +21,15 @@ if __name__ == '__main__':
     response = requests.get(stock_url.format(stock, stock))
 
     if choice == 'l':
+
         print("Press ctrl+c to stop program")
+        
         while True:
             priceTracker()
             time.sleep(1)
             
     elif choice == 'c':
         priceTracker()
+
     else:
         print("Invalid input")
